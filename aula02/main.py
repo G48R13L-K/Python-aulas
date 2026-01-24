@@ -4,7 +4,9 @@ while True:
     print("\n--- HELP DESK TÉCNICO ---") 
     print("1. Novo Chamado") 
     print("2. Listar Chamados")
-    print("3. Finalizar Chamado") 
+    print("3. Finalizar Chamado")
+    print("4. Exportar Chamados")
+    print("5. Importar Chamados") 
     print("0. Sair") 
 
     opcao = int(input("Escolha uma opção: "))
@@ -19,6 +21,10 @@ while True:
         case 3:
             print("\n--- Finalizar Chamado ---")
             finalizar_chamado()
+        case 4:
+            exportar_chamados()
+        case 5:
+            importar_chamados()
         case 0:
             print("Desligando sistema...")
             break
